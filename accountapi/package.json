@@ -1,0 +1,21 @@
+{
+  "name": "accountapi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "sql": "npx wrangler d1 execute pikacnu-account-db --local --file=./schema.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240320.1",
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "crypto-js": "^4.2.0"
+  }
+}
